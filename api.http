@@ -1,0 +1,37 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": "mais um novo evento",
+  "details": "Um dos eventos já feitos.",
+  "maximumAttendees": 3
+}
+
+###
+
+POST http://localhost:3333/events/69ee6cff-2f70-435f-9351-bfe5213f47ee/attendees
+Content-Type: application/json
+
+{
+  "name": "Mirella Sato",
+  "email": "mirella@sato.com"
+}
+
+###
+
+GET http://localhost:3333/events/69ee6cff-2f70-435f-9351-bfe5213f47ee
+
+
+###
+
+GET http://localhost:3333/attendees/2/badge
+
+
+###
+
+GET http://localhost:3333/attendees/3/check-in
+
+
+
+###
+GET http://localhost:3333/events/69ee6cff-2f70-435f-9351-bfe5213f47ee/attendees?query=mir

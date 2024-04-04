@@ -3,7 +3,7 @@
   "_version": "20.1.0",
 
   "compilerOptions": {
-    "lib": ["ESNext"],
+    "lib": ["es2023"],
     "module": "node16",
     "target": "es2022",
 
